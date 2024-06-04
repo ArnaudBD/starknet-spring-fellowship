@@ -11,7 +11,7 @@ Let's take the example of Ekubo for example. Suppose that you owned two types of
 This is very different from the traditionnal banking system where currency exchanges are in general managed by banks or you can, for example, delve into Forex trading which is very complex. On the blockchain, these protocols abstract a lot of the complexity and provided you have a wallet and some tokens, anyone can start investing.
 
 Ekubo is what we call an Automated Market Makers (AMM) which is essentially a Market Maker but where the management of the liquidity is done by an algorithm on-chain. It relies on a model called "Uniswap V3" which is not necessarily easy to understand as you can see by reading the whitepaper.
-In anycase, protocols such as Ekubo are a the core of the DeFi world and they will be our object of interest in this small project, because they will allow use to find arbitrage opportunity.
+In anycase, protocols such as Ekubo are at the core of the DeFi world and they will be our object of interest in this small project, because they will allow use to find arbitrage opportunity.
 
 Let's now get back to the context of our arbitrage bot. How do we find arbitrage opportunity ? Arbitrages happens when pool are said to be "unbalanced". To understand what it means we will start with one of the simplest (but also most widely used) AMM model which is that of Uniswap V2. These models defines, for a given amount in of an asset, how much amount out you'll end up with. However, we will see that in general, instead of giving the swap function, these models define an implicit formula (invariant) relating the amount of each tokens they manage.
 
@@ -103,7 +103,7 @@ Go on app.avnu.fi and try disabling some sources (the little gear bottom-right c
 
 ---
 
-Now that we have a better understanding of these different concept, let's see how we can spot arbitrage opportunity ! We've mentionned a the beginning of this challenge that such opportunities arise when the pools are unbalanced.
+Now that we have a better understanding of these different concept, let's see how we can spot arbitrage opportunity ! We've mentionned at the beginning of this challenge that such opportunities arise when the pools are unbalanced.
 
 Suppose we are at block B and we have a pool $Pool(reserve_A,reserve_B)$ balanced which means that $f_{A \rightarrow B}(1) = P$ where $P$ is the real price on the market. Now suppose that someone do a trade, using our pool, with an amount $x$. Let's see how this moves the price !
 
