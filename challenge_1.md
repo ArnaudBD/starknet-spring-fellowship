@@ -103,7 +103,7 @@ Go on app.avnu.fi and try disabling some sources (the little gear bottom-right c
 
 ---
 
-Now that we have a better understanding of these different concept, let's see how we can spot arbitrage opportunity ! We've mentionned a the beginning of this challenge that such opportunities arise when the pools are unbalanced.
+Now that we have a better understanding of these different concept, let's see how we can spot arbitrage opportunity ! We've mentionned at the beginning of this challenge that such opportunities arise when the pools are unbalanced.
 
 Suppose we are at block B and we have a pool $Pool(reserve_A,reserve_B)$ balanced which means that $f_{A \rightarrow B}(1) = P$ where $P$ is the real price on the market. Now suppose that someone do a trade, using our pool, with an amount $x$. Let's see how this moves the price !
 
